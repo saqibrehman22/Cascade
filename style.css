@@ -1,48 +1,62 @@
-/* Last rule */
-h1{
-    color: blue;
-    background-color: yellow;
-}
-h1{
-    color: black;
-    background-color: brown;
-}
-/* SPECIFICIT */
-*{
-    color: rgb(0, 47, 255);
-}
- div>h2{
+/* LAST RULE */
+
+/* p{
     color: red;
-    background-color: black;
- }
- /* IMPORTANCE */
- p{
-    color: rgb(255, 0, 0) !important;
-   
-    border: 2px dotted rebeccapurple;
- }
- p{
+}
+p{
     color: blue;
-    
-    border: 2px dashed rgb(255, 0, 242);
- }
- /* INHERITANCE */
- .khan{
-    background-color: black;
-    padding: 10px;
-    border: 6px solid rgb(255, 0, 0);
-     
- }
- h4{
-    color: rgb(255, 251, 0);
-    
- }
- ol{
-    padding:20px;
- }
- ol>li{
-    color: brown;
-    padding: inherit;
-    
- }
+} 
+
+p{
+    color: green;
+} */
+
+
+  /* SPECIFICITY */
+
+/* *{
+  color: red;
+}
+p{
+    color: blue;
+}
+p#intro{
+    color: green;
+} */
+
+/* !IMPORTANT */
+
+/* *{
+    color: red !important;
+  }
+  p{
+      color: blue;
+  }
+  p#intro{
+      color: green;
+  } */
+
+  /* INHERITANCE EXP 1*/
+/* 
+  div{
+    color: green;
+  }
+
+  p{
+    font-family: 'Courier New', Courier, monospace;
+    color: inherit;
+  } */
+
+  /* INHERITANCE EXP 2*/
+
+  body{
+   border: 3px solid black;
+   color: red;
+   padding: 10px;
+}
+.box1{
+   border: 3px solid black;
+   color: blue;
+   padding: inherit;
+}
  
